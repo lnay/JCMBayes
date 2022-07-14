@@ -28,13 +28,16 @@ portal), this bot needs the channel ID of the channel it is monitoring and the
 bot token (as found in discord developer portal).
 
 Inside this repo directory, copy the sample config file:
+
 ``cp auth.json.sample auth.json``
+
 And modify the values of the "channel" and "token" fields to contain the
 channel ID and bot token mentioned above.
 
 ## Run
 
 Requires node+npm:
+
 ``npm run start``
 
 ## Development
