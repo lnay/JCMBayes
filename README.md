@@ -42,3 +42,4 @@ Requires node+npm:
 
 ## Development
 `npm run dev` will run nodemon in order to restart node every time a file is changed.
+The entrypoint for this bot is [app.js](./app.js).
