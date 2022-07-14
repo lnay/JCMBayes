@@ -34,6 +34,10 @@ Inside this repo directory, copy the sample config file:
 And modify the values of the "channel" and "token" fields to contain the
 channel ID and bot token mentioned above.
 
+Then install the dependencies with npm (required):
+
+```npm install```
+
 ## Run
 
 Requires node+npm:
