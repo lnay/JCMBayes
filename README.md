@@ -1,5 +1,9 @@
 # JCMBayes bot
 
+## Behaviour
+
+### Channel message gatekeeping
+
 The purpose of this bot is to monitor the messages sent to a specific channel
 in a discord server and check that they adhere to the arbitrary rules which are
 as follows:
@@ -11,6 +15,11 @@ as follows:
 Any messages sent to the channel in question which do not adhere to these rules
 receive a sequence of demeining reactions.
 And then, after a delay, the message is deleted by this bot.
+
+#### Rule clarifications
+
+This bot will also clarify the rules from the previous section if it sees the message "!rules".
+In this case, it does not react to, or delete this message despite breaking the rules.
 
 ## Setup
 
