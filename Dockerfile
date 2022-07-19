@@ -1,11 +1,16 @@
-FROM node:18-alpine3.15 as builder
+FROM docker.io/node:14-alpine as builder
 
 # install dependencies
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --production
 
 # Copy all local files into the image.
-COPY . .
+FROM docker.io/mhart/alpine-node:slim-14 as deployment
 
-CMD ["npm","start"]
+WORKDIR /app
+COPY --from=builder /app/node_modules node_modules
+COPY auth.json .
+COPY app.js .
+
+CMD ["node","app.js"]
