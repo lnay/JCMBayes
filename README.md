@@ -8,9 +8,9 @@ The purpose of this bot is to monitor the messages sent to a specific channel
 in a discord server and check that they adhere to the arbitrary rules which are
 as follows:
 
-1) the message starts with either "JCMB" or "Bayes" (case insensitive and optional)
+1) the message starts with either "JCMB" or "Bayes" (case insensitive and non-optional)
 2) followed by one or more spaces, then a word (optional)
-3) followed by one punctuation mark (optional)
+3) followed by one punctuation mark
 
 Any messages sent to the channel in question which do not adhere to these rules
 receive a sequence of demeining reactions.
